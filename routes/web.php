@@ -29,9 +29,9 @@ Route::group(
     {
 
 
-        foreach (File::allFiles(__DIR__ . '/routesFiles') as $route) {
-            require_once $route->getPathname();
-        }
+//        foreach (File::allFiles(__DIR__ . '/routesFiles') as $route) {
+//            require_once $route->getPathname();
+//        }
 
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
 
