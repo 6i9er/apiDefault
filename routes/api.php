@@ -28,7 +28,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-Route::post('example', array('middleware' => 'Cors', 'uses' => 'AuthenticateController@login'));
+Route::post('login', array('middleware' => 'Cors', 'uses' => 'AuthenticateController@login'));
 
 Route::group(
     [
@@ -38,8 +38,8 @@ Route::group(
     {
 
 //        Route::post('login' , 'AuthenticateController@login');
-//        Route::get('user' , 'AuthenticateController@getUserData');
-//        Route::get('home' , 'AuthenticateController@home');
+        Route::get('user' , 'AuthenticateController@getUserData');
+        Route::get('home' , 'AuthenticateController@home');
 
     });
 
