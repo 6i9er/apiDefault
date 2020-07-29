@@ -18,15 +18,24 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::group([
-    'middleware' => ['api', 'cors'],
-//    'namespace' => $this->namespace,
-    'prefix' => 'api',
-], function ($router) {
-    //Add you routes here, for example:
-    Route::post('login' , 'AuthenticateController@login');
-    Route::get('user' , 'AuthenticateController@getUserData');
-    Route::get('home' , 'AuthenticateController@home');
-});
+
+
+
+
+
+
+Route::group(
+    [
+        'prefix' => 'api',
+        'middleware' => [ 'api', 'cors']
+    ],
+    function()
+    {
+
+        Route::post('login' , 'AuthenticateController@login');
+        Route::get('user' , 'AuthenticateController@getUserData');
+        Route::get('home' , 'AuthenticateController@home');
+
+    });
 
 
