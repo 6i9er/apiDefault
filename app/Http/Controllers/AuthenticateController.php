@@ -58,7 +58,7 @@ class AuthenticateController extends Controller
             $data['articles'] = Article::all();
 
         return [
-            "errors" => 1,
+            "errors" => 0,
             'msg' => $data
         ];
     }
