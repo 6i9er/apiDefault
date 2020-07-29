@@ -182,7 +182,7 @@ return [
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         'Barryvdh\TranslationManager\ManagerServiceProvider',
 
-        FruitCake\Cors\CorsServiceProvider::class,
+//        FruitCake\Cors\CorsServiceProvider::class,
     ],
 
     /*
