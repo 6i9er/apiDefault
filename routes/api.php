@@ -24,7 +24,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-Route::post('login', array('middleware' => 'Cors', 'uses' => 'AuthenticateController@login'));
+Route::post('login', array('middleware' => ['Cors' , 'api'], 'uses' => 'AuthenticateController@login'));
 
 Route::group(
     [
