@@ -28,6 +28,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
+Route::post('example', array('middleware' => 'Cors', 'uses' => 'AuthenticateController@login'));
 
 Route::group(
     [
@@ -36,9 +37,9 @@ Route::group(
     function()
     {
 
-        Route::post('login' , 'AuthenticateController@login');
-        Route::get('user' , 'AuthenticateController@getUserData');
-        Route::get('home' , 'AuthenticateController@home');
+//        Route::post('login' , 'AuthenticateController@login');
+//        Route::get('user' , 'AuthenticateController@getUserData');
+//        Route::get('home' , 'AuthenticateController@home');
 
     });
 
