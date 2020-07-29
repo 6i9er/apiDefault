@@ -181,6 +181,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         'Barryvdh\TranslationManager\ManagerServiceProvider',
+
+        FruitCake\Cors\CorsServiceProvider::class,
     ],
 
     /*
