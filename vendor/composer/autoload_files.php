@@ -23,4 +23,7 @@ return array(
     '801c31d8ed748cfa537fa45402288c95' => $vendorDir . '/psy/psysh/src/functions.php',
     '4a1f389d6ce373bda9e57857d3b61c84' => $vendorDir . '/barryvdh/laravel-debugbar/src/helpers.php',
     '19731b5f2ed4e22fb2aa67f945cc3dd5' => $baseDir . '/app/Helpers/PathHelpers.php',
+    '3ca4cb07ee76ff26cac516f2013dcaa0' => $baseDir . '/app/Helpers/UsersHelpers.php',
+    '21906588d9c1ae3a8f681ea8116a0148' => $baseDir . '/app/Helpers/MessagesHelpers.php',
+    '043309a6dfe68db42a925614d2a21127' => $baseDir . '/app/Helpers/ImagesHelpers.php',
 );

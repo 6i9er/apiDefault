@@ -1,14 +1,23 @@
-@extends('layouts.app')
-@section('title'){{getPageNameForTitle('0')}}@stop
-@section('fonts')
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {{-- Meta Tags --}}
+    @include('layouts.metaTags')
+    @yield('metaTags')
+
+    <title>Bikers  | Page Not Found </title>
+
+    <!-- Styles -->
+    @include('layouts.styles')
+    <link rel="stylesheet" href="{{ asset(elixir('css/separate/404.css')) }}">
     <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-@stop
-@section('styles')
-{{--    <link rel="stylesheet" href="{{ url('css/404.css') }}">--}}
-    <link rel="stylesheet" href="{{ asset(elixir('css/separate/404.css')) }}">
-@endsection
-@section('content')
+</head>
+<body>
+<div id="app">
+    {{-- NavBar--}}
+    {{--@include('layouts.navBar')--}}
+
     <div class="container demo-2">
         <div class="content">
             <div id="large-header" class="large-header">
@@ -21,11 +30,10 @@
             </div>
         </div>
     </div>
+</div>
 
-@endsection
-@section('scripts')
-    <!-- js files -->
-        {{--<script src="{{ url('js/404.js') }}" ></script>--}}
-        <script src="{{ asset(elixir('js/separate/404.js')) }}" ></script>
-    <!-- /js files -->
-@endsection
+<!-- Scripts -->
+@include('layouts.scripts')
+<script src="{{ asset(elixir('js/separate/404.js')) }}" ></script>
+</body>
+</html>

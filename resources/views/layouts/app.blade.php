@@ -13,8 +13,10 @@
 </head>
 <body>
     <div id="app">
-        {{-- NavBar--}}
-        @include('layouts.navBar')
+        @if(\Illuminate\Support\Facades\Auth::check())
+            {{-- NavBar--}}
+            @include('layouts.navBar')
+        @endif
 
         @yield('content')
     </div>

@@ -3,6 +3,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Webpatser\Uuid\Uuid;
 
 class Member extends Model
 {
@@ -16,7 +17,9 @@ class Member extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'center_id', 'name', 'email', 'account_id', 'type' , 'uuid' , 'password' , 'justRegistered', 'updated_at',  'deleted_at', 'created_at',
+        'id', 'name', 'email',   'uuid' , 'password' ,'gender' , 'username' ,
+        'user_type', 'user_status', 'forget_token',   'profile_pic' ,
+        'remember_token' , 'phone', 'updated_at',  'deleted_at', 'created_at',
     ];
 
     /**
@@ -55,21 +58,11 @@ class Member extends Model
     }
 
     public static function add($inputs = []){
+        $inputs['uuid'] = Uuid::generate()->string;
         return Member::create($inputs);
     }
     public static function edit($inputs = [] , $userId = 0){
         return Member::where("uuid" , $userId)->update($inputs);
     }
 
-    // Relations
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function center(){
-        return $this->belongsTo('App\Models\Center' , 'center_id' );
-    }
-
-    public function account(){
-        return $this->belongsTo('App\Models\Account' , 'account_id' );
-    }
 }

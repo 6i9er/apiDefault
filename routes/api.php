@@ -24,7 +24,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-Route::post('login', array('middleware' => ['Cors' , 'api'], 'uses' => 'AuthenticateController@login'));
+//Route::post('login', array('middleware' => ['Cors' , 'api'], 'uses' => 'AuthenticateController@login'));
 
 Route::group(
     [
@@ -33,8 +33,20 @@ Route::group(
     function()
     {
 
-//        Route::post('login' , 'AuthenticateController@login');
-        Route::get('user' , 'AuthenticateController@getUserData');
+//        Authenticate Controller
+        Route::post('login' , 'AuthenticateController@login');
+        Route::post('signup' , 'AuthenticateController@signup');
+        Route::post('reset-password' , 'AuthenticateController@resetPassword');
+//        User Controller
+        Route::get('user' , 'UserController@getUserData');
+        Route::get('user-with-uuid/{uuid?}' , 'UserController@getUserDataWithUUID');
+        Route::get('block-user/{uuid?}/{lang?}' , 'UserController@blockUser');
+        Route::get('unblock-user/{uuid?}/{lang?}' , 'UserController@unblockUser');
+        Route::post('change-password' , 'UserController@changePassword');
+        Route::post('change-settings' , 'UserController@changeSetting');
+
+
+
         Route::get('home' , 'AuthenticateController@home');
 
     });

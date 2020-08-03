@@ -50,6 +50,7 @@ return array(
     'JakubOnderka\\PhpConsoleColor\\' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'HTMLMin\\HTMLMin\\' => array($vendorDir . '/htmlmin/htmlmin/src'),
+    'Fruitcake\\Cors\\' => array($vendorDir . '/barryvdh/laravel-cors/src'),
     'Fideloper\\Proxy\\' => array($vendorDir . '/fideloper/proxy/src'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
@@ -62,6 +63,7 @@ return array(
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'Barryvdh\\TranslationManager\\' => array($vendorDir . '/barryvdh/laravel-translation-manager/src'),
     'Barryvdh\\Debugbar\\' => array($vendorDir . '/barryvdh/laravel-debugbar/src'),
+    'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src/Asm89/Stack'),
     'App\\' => array($baseDir . '/app'),
     '' => array($vendorDir . '/nesbot/carbon/src'),
 );

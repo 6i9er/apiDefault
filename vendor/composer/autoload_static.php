@@ -24,6 +24,9 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         '19731b5f2ed4e22fb2aa67f945cc3dd5' => __DIR__ . '/../..' . '/app/Helpers/PathHelpers.php',
+        '3ca4cb07ee76ff26cac516f2013dcaa0' => __DIR__ . '/../..' . '/app/Helpers/UsersHelpers.php',
+        '21906588d9c1ae3a8f681ea8116a0148' => __DIR__ . '/../..' . '/app/Helpers/MessagesHelpers.php',
+        '043309a6dfe68db42a925614d2a21127' => __DIR__ . '/../..' . '/app/Helpers/ImagesHelpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -112,6 +115,7 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         ),
         'F' => 
         array (
+            'Fruitcake\\Cors\\' => 15,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
         ),
@@ -139,6 +143,7 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         ),
         'A' => 
         array (
+            'Asm89\\Stack\\' => 12,
             'App\\' => 4,
         ),
     );
@@ -322,6 +327,10 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         array (
             0 => __DIR__ . '/..' . '/htmlmin/htmlmin/src',
         ),
+        'Fruitcake\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -369,6 +378,10 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         'Barryvdh\\Debugbar\\' => 
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
+        ),
+        'Asm89\\Stack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
         ),
         'App\\' => 
         array (
@@ -426,19 +439,20 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         'App\\Http\\Controllers\\AuthenticateController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthenticateController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\SiteSettingController' => __DIR__ . '/../..' . '/app/Http/Controllers/SiteSettingController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\Cors' => __DIR__ . '/../..' . '/app/Http/Middleware/Cors.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Mail\\SendForgetPasswordLink' => __DIR__ . '/../..' . '/app/Mail/SendForgetPasswordLink.php',
         'App\\Mail\\TestEmail' => __DIR__ . '/../..' . '/app/Mail/TestEmail.php',
         'App\\Mail\\ThanksSubscribeMail' => __DIR__ . '/../..' . '/app/Mail/ThanksSubscribeMail.php',
+        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
         'App\\Models\\ContactUs' => __DIR__ . '/../..' . '/app/Models/Tracking.php',
-        'App\\Models\\GroupNames' => __DIR__ . '/../..' . '/app/Models/GroupNames.php',
         'App\\Models\\Member' => __DIR__ . '/../..' . '/app/Models/Member.php',
-        'App\\Models\\Permissions' => __DIR__ . '/../..' . '/app/Models/Permissions.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -446,6 +460,8 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
+        'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
+        'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
@@ -1127,6 +1143,8 @@ class ComposerStaticInit3ee199a71a2c589c68be3f0215cf7957
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
         'FirePHP' => __DIR__ . '/..' . '/mrclay/minify/min/lib/FirePHP.php',
+        'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/CorsServiceProvider.php',
+        'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandleCors.php',
         'HTMLMin\\HTMLMin\\Compilers\\MinifyCompiler' => __DIR__ . '/..' . '/htmlmin/htmlmin/src/Compilers/MinifyCompiler.php',
         'HTMLMin\\HTMLMin\\Facades\\HTMLMin' => __DIR__ . '/..' . '/htmlmin/htmlmin/src/Facades/HTMLMin.php',
         'HTMLMin\\HTMLMin\\HTMLMin' => __DIR__ . '/..' . '/htmlmin/htmlmin/src/HTMLMin.php',

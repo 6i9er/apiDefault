@@ -33,7 +33,10 @@
             "App\\": "app/"
         },
         "files": [
-            "app/Helpers/PathHelpers.php"
+            "app/Helpers/PathHelpers.php",
+            "app/Helpers/UsersHelpers.php",
+            "app/Helpers/MessagesHelpers.php",
+            "app/Helpers/ImagesHelpers.php"
         ]
     },
     "autoload-dev": {
