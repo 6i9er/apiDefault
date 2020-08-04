@@ -17,7 +17,7 @@ class Member extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'name', 'email',   'uuid' , 'password' ,'gender' , 'username' ,
+        'id', 'name', 'email',   'uuid' , 'password' ,'gender' , 'username' ,'google_id' , 'facebook_id' ,
         'user_type', 'user_status', 'forget_token',   'profile_pic' ,
         'remember_token' , 'phone', 'updated_at',  'deleted_at', 'created_at',
     ];

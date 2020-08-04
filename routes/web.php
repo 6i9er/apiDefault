@@ -37,11 +37,14 @@ Route::group(
 
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
 
-//        Route::get('/', function () {
-//            return Webpatser\Uuid\Uuid::generate()->string;
-//            return "aaaaaaaaaaaaaaaaaaaaaaaaa";
-//            return view('welcome');
-//        });
+        Route::get('/', function () {
+
+
+
+            return Webpatser\Uuid\Uuid::generate()->string;
+            return "aaaaaaaaaaaaaaaaaaaaaaaaa";
+            return view('welcome');
+        });
 
 //    Route::get('/users', 'HomeController@index');
 //

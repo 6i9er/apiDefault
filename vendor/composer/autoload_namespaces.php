@@ -11,4 +11,7 @@ return array(
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Mcamara\\LaravelLocalization' => array($vendorDir . '/mcamara/laravel-localization/src'),
+    'Imagine' => array($vendorDir . '/imagine/imagine/lib'),
+    'Folklore\\Image\\Tests' => array($vendorDir . '/folklore/image/tests'),
+    'Folklore\\Image\\' => array($vendorDir . '/folklore/image/src'),
 );

@@ -183,6 +183,7 @@ return [
         'Barryvdh\TranslationManager\ManagerServiceProvider',
 
 //        FruitCake\Cors\CorsServiceProvider::class,
+//        'Folklore\Image\ImageServiceProvider',
     ],
 
     /*
@@ -236,6 +237,7 @@ return [
         'HTMLMin' => HTMLMin\HTMLMin\Facades\HTMLMin::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+//        'Image' => 'Folklore\Image\Facades\Image',
     ],
 
 ];
