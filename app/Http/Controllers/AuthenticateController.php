@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\SendForgetPasswordLink;
 use App\Mail\ThanksSubscribeMail;
-use App\Models\Article;
+use App\Models\Bike;
 use App\Models\Member;
 use Illuminate\Http\Request;
 use App\Mail\TestEmail;
@@ -276,7 +276,7 @@ class AuthenticateController extends Controller
                     $data['user'] = $user;
                 }
             }
-            $data['articles'] = Article::all();
+            $data['articles'] = Bike::all();
 
         return [
             "errors" => 0,

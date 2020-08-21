@@ -14,15 +14,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-});
-
-
-
-
-
-
 
 //Route::post('login', array('middleware' => ['Cors' , 'api'], 'uses' => 'AuthenticateController@login'));
 
@@ -32,21 +23,9 @@ Route::group(
     ],
     function()
     {
-
-//        Authenticate Controller
-        Route::post('login' , 'AuthenticateController@login');
-        Route::post('signup' , 'AuthenticateController@signup');
-        Route::post('reset-password' , 'AuthenticateController@resetPassword');
-        Route::post('login-by-api' , 'AuthenticateController@loginByAPI');
-//        User Controller
-        Route::get('user' , 'UserController@getUserData');
-        Route::get('user-with-uuid/{uuid?}/{lang?}' , 'UserController@getUserDataWithUUID');
-        Route::get('block-user/{uuid?}/{lang?}' , 'UserController@blockUser');
-        Route::get('unblock-user/{uuid?}/{lang?}' , 'UserController@unblockUser');
-        Route::post('change-password' , 'UserController@changePassword');
-        Route::post('change-settings' , 'UserController@changeSetting');
-
-
+         foreach (File::allFiles(__DIR__ . '/routesFiles') as $route) {
+            require_once $route->getPathname();
+        }
 
         Route::get('home' , 'AuthenticateController@home');
 

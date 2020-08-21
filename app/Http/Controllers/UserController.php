@@ -249,6 +249,8 @@ class UserController extends Controller
             }
         }
 
+//        return $_FILES["file"]["name"];
+
         $validator = Validator::make($request->all(), [
             'user_type' => '',
             'uuid' => 'required|exists:users,uuid',
